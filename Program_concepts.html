@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="img/imagineer-bg-removed-removebg-preview.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Progamming Concepts</title>
+</head>
+
+<body class="algo prime">
+    <header class="accent">
+        <figure class="logo">
+            <a href="index.html">
+                <img width="50px" src="img/imagineer-bg-removed-removebg-preview.png" alt="">
+            </a>
+        </figure>        <nav class="">
+            <ul class="align-self-center">
+                <a href="Program_concepts.html">
+                    <li>Programming Concepts</li>
+                </a>
+                <a href="algorithms.html">
+                    <li>Algorithms</li>
+                </a>
+                <a href="#">
+                    <li>Favorite Books</li>
+                </a>
+            </ul>
+        </nav>
+        <button type="button" class="contact_btn sub shadow4">Contact</button>
+        <menu>
+            <ion-icon name="menu-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"></ion-icon>
+        </menu>
+    </header>
+
+   
+
+
+
+    <main class="hidden algo-main">
+
+
+        <menu class="table-of-content-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling">
+            <ion-icon name="caret-forward-sharp"></ion-icon>
+        </menu>
+       <div class="algo-title fs-1">
+        <h1>Progamming Concepts</h1>
+       </div>
+        <section class="content1 gap-3" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">
+            <div id="intro"></div>
+            <h1  class="fs-2">Introduction</h1>
+            <div class="paper blu">
+                <p class="text-center">
+                    A lot of software developers (some self taught some schooling) don't have a good enough
+                    understanding of programming concepts that are crucial in building efficient applications and
+                    algorithms. Here my job is to inform those who don't know what they don't know 😉
+                </p>
+            </div>
+        </section>
+        <section class="content2 text-center pt-5 d-flex gap-3 justify-content-start flex-column align-items-center">
+            <h1 id="mergesort" class="mt-5 fs-2">Object Oriented Programming</h1>
+            <div class="paper">
+                OOP, or Object-Oriented Programming, is a programming paradigm that is based on the concept of
+                "objects", which can contain data and code that manipulates that data. In OOP, you define "classes" that
+                represent real-world objects, and you create "instances" of those classes to carry out tasks. One of the
+                main benefits of OOP is that it allows developers to create modular and reusable code, which can make it
+                easier to develop and maintain complex software systems. OOP languages include Java, C++, and Python,
+                among others.
+            </div>
+            <div id="encapsulation"></div>
+            <h1  class="mt-5 fs-2">Encapsulation</h1>
+
+            <div class="paper">
+                Encapsulation is the technique of hiding the properties and method details of an object from outside the
+                class, and providing a controlled interface through which the object can be accessed and manipulated.
+                This act of closing off allows the object to change without affecting the code that uses it.
+                Encapsulation provides a level of security for the internal state of the object by limiting unauthorized
+                access in addition to promoting modularity and reusability of programming.
+            </div>
+            <p>Here is an example of encapsulation</p>
+            <img class="w-75 img-fluid" src="img/javaExampl1.png" alt="">
+            <div class="paper">
+                <p>
+                    Here you can see that the Animal class has 2 fields type and legs. Where encapsulation takes place
+                    is when we set the keyword <span class="fw-bold">private</span> to each object field. The reason why
+                    we use the keyword <span class="fw-bold">private</span> is to keep other parts outside of the class
+                    from using these object fields. This privatization is generally used to allow each object to use
+                    their fields as one whole entity. This concept derives itself from the real world. Example, a dog is
+                    known to have 4 legs, someone can't just make a dog have 5 legs because 4 legs are attributed to a
+                    dog.
+                </p>
+            </div>
+            <div id="poly"></div>
+            <h1 class="mt-5 fs-2">Polymorphism</h1>
+            <!-- <img width="600px" class="img-fluid" src="img/Merge-Sort-Algorithm.png" alt=""> -->
+            <div class="paper">
+                <p>
+                    With the help of polymorphism, several data types can be handled by a single function or method in
+                    object-oriented programming. This enables more adaptable and reuseable code. Polymorphism is the
+                    capacity of a single function or method to operate on a variety of data types. Along with
+                    inheritance and encapsulation, it is one of the core ideas in object-oriented programming.
+                </p>
+            </div>
+            <!-- <h1 id="quicksort" class="pt-5"></h1> -->
+            <p>Here is an example of polymorphism</p>
+            <img class="w-75 img-fluid" src="img/polymorph.png" alt="">
+            <div class="paper">
+                <p>
+                    Here you can see that the method <code>add()</code> is written twice but one metrhod returns an
+                    integer and the other returns a double. This allows the client using this method to be able to
+                    perform the same process but with different data types. This idea of taking up multiple forms is
+                    know as polymorphism. Another word used with polymorphism is overriding a method.
+                </p>
+            </div>
+            <div id="abstract"></div>
+            <h1 class="mt-5 fs-2">Abstraction</h1>
+            <div class="paper">
+
+                <p>
+                    To abstract away something is to bury the implementation details within something, which can be a
+                    prototype or a function. Therefore, you are not required to fully comprehend the function's purpose
+                    while calling it. You would never write any code if you had to comprehend every single function in a
+                    large codebase. It would take weeks or months to read everything. By removing some details, you can
+                    produce a reusable, easily understandable, and adaptable codebase.
+
+                </p>
+            </div>
+
+            <p class="fs-3">Here is an illustration of some Abstract Collection classes is Java</p>
+            <img class="w-75 img-fluid" src="img/collections_class_heirarchy.png" alt="">
+            <div class="paper">
+                <p>
+                    When anything has to be extended, an abstract class is used to represent it. Let's imagine that we
+                    wish to use an application to model employees and their various job roles. The work that each person
+                    performs depends on their position, even if we are aware that each employee will have a name and be
+                    a part of a department. We may create a class called Employee and is used for specific employment
+                    positions that extend Employee to simulate this scenario. To require implementation from subclasses,
+                    we can make the Employee class abstract and define an abstract method inside of it.
+                </p>
+            </div>
+            <img class="w-75 img-fluid" src="img/employee-class.png" alt="">
+            <div class="paper">
+                <p class="fs-4">In another Java file we can create another class called developer and extend the Employee class. In a
+                    real world perspective we can represent this concept abstractly like this. </p>
+            </div>
+            <img class="w-75 img-fluid" src="img/developer-class.png" alt="">
+            <div id="inherit"></div>
+            <h1  class="pt-5 fs-2">Inheritance</h1>
+            <div class="paper">
+                <p>
+                    Inheritance is a concept in object-oriented programming (OOP) where a class (called the child class
+                    or subclass) inherits the properties and methods of another class (called the parent class or
+                    superclass). This allows you to reuse and organize your code, as well as the ability to model
+                    real-world relationships between different objects. The child class can also add or override
+                    properties and methods of the parent class.
+                </p>
+            </div>
+            <div class="paper">
+                <p>A good example of inheritance would be the image above this. The Developer class inherits the Employee super class.
+                </p>
+
+            </div>
+            <div id="more"></div>
+            <h1 class="mt-5 fs-2">More to come!</h1>
+            <div class="paper blu mt-4 mb-4">
+                <p>
+                    That's it for now. Make sure to be on the look out for more concepts being posted right here i.e time/space complexity, REST API's, databases etc... 
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+  <footer>
+    footer
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/anime.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Herbert Holder</title>
+</head>
+
+<body class="prime">
+    <header class="accent">
+        <figure class="logo">
+            <a href="index.html">
+                <img width="50px" src="img/imagineer-bg-removed-removebg-preview.png" alt="">
+            </a>
+        </figure>
+        <nav class="">
+            <ul class="align-self-center">
+                <a href="Program_concepts.html">
+                    <li>Programming Concepts</li>
+                </a>
+                <a href="algorithms.html">
+                    <li>Algorithms</li>
+                </a>
+                <a href="#">
+                    <li>Favorite Books</li>
+                </a>
+            </ul>
+        </nav>
+        <button type="button" class="contact_btn sub shadow4">Contact</button>
+        <menu>
+            <ion-icon name="menu-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"></ion-icon>
+        </menu>
+    </header>
+    <div class="light-cont_anime fit-content d-flex justify-content-end">
+        <button type="button" class="light_btn">
+            <ion-icon id="light-mode_icon" class="fs-1" name="sunny-outline"></ion-icon>
+        </button>
+    </div>
+   <main class="algo-main">
+    <div class="algo-title fs-2">
+        <h1>Algorithms And Data Structures</h1>
+    </div>
+    <section class="content1 gap-3">
+        <br>
+        <div id="intro"></div>
+        <h1 class=" fs-2">Introduction</h1>
+        <div class="paper blu" >
+            <p class="text-center">
+                Data structures and algorithms are fundamental concepts in computer science. Data structures are
+                used to organize and store data efficiently, while algorithms are used to manipulate and process
+                that data. Together, data structures and algorithms form the basis of many computer programs, and
+                they are essential tools for improving the efficiency and performance of those programs. The study
+                of data structures and algorithms is an important part of computer science because these concepts
+                are used to design and analyze efficient solutions to a wide variety of problems. Feeling
+                Nerdy?...Well Check out my Algorithms analysis project in C++ on <span><a
+                        style="color:#ffffff !important; text-decoration:underline;"
+                        href="https://replit.com/@HerbertRHolder/SortingProject20#main.cpp">Replit!</a></span> and
+                <span><a style="color:#ffffff !important; text-decoration:underline;"
+                        href=" https://github.com/HerbertRHolder/Algorithm-Analysis/blob/master/main.cpp">Github</a></span>
+            </p>
+        </div>
+    </section>
+    <section class="content2 gap-4 text-center d-flex justify-content-start flex-column align-items-center">
+        <div id="mergesort"></div>
+            <h1 class="fs-2">Merge Sort</h1>
+            <div class="paper">
+                One algorithm we can talk about is the mergesort algorithm. It is an
+                algorithm that uses a technique known as divide-and-conquer which breaks down a problem into smaller
+                pieces. This breaking down process makes it more efficient in solving each individual problem
+                separately.
+            </div>
+            <div class="paper">
+                It is a recursive algorithm which continuously splits an array in half until it cannot be further
+                divided. So this means The base case to stop the recursion is when there is either no elements in the
+                array or at least one element. However if the array has multiple elements, split the array into halves
+                and recursively invoke the merge sort on each of the halves. Lastly, when both halves are sorted, the
+                merge operation is applied. Merge operation is a action of taking two smaller sorted arrays and
+                combining them to eventually make a larger one. In the end each piece merges to create a new sorted
+                array.
+            </div>
+            <p class="fs-3">Here is an image showing the mergesort algorithm</p>
+            <img width="600px" class="img-fluid" src="img/Merge-Sort-Algorithm.png" alt="">
+            <div class="paper">
+                <p>
+                    Merge sort has a time complexity of O(n log n), making it a good choice for sorting large lists. It
+                    is a stable sort, meaning that the relative order of elements with equal keys is preserved by the
+                    sort. Merge sort is also an example of a divide-and-conquer algorithm. 
+                </p>
+            </div>
+            <div id="quicksort"></div>
+            <h1 class="fs-2">Quick Sort</h1>
+            <div class="paper">
+                <p>
+                    Quicksort is an efficient sorting algorithm that like mergesort uses a divide-and-conquer approach
+                    to
+                    sort a list of items. It works by selecting a "pivot" element from the list, and partitioning the
+                    other
+                    elements into two lists based on whether they are less than or greater than the pivot. The two
+                    sublists
+                    are then recursively sorted using the same quicksort algorithm.
+                </p>
+            </div>
+            <p>Here is a video on how to quicksort works.</p>
+            <iframe width="380" height="300" src="https://www.youtube.com/embed/Hoixgm4-P4M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="paper">
+
+                <p>Quicksort has a time complexity of O(n log n), making it a fast and efficient sorting algorithm for
+                    large lists. However, it is not a stable sort, meaning that the relative order of elements with
+                    equal keys may be changed by the sort. Read about <span>Stable Sorts at </span><span><a
+                            href="https://www.freecodecamp.org/news/stability-in-sorting-algorithms-a-treatment-of-equality-fa3140a5a539/">FreeCodeCamp</a></span>
+                </p>
+            </div>
+            <div id="selectionsort"></div>
+            <h1 class=" fs-2">Selection Sort</h1>
+            <div class="paper">
+
+                <p>
+                    Selection sort works by repeatedly finding the
+                    minimum element from the unsorted part of the list and adding it to the sorted part of the list. In every iteration of selection sort, the minimum element (given ascending order) from the unsorted subarray is picked and moved to the beginning of unsorted subarray. 
+                    After every iteration the sorted subarray size increases by one and the unsorted subarray size decrease by one.
+                </p>
+            </div>
+            <div class="paper">
+                <p>
+                    Selection sort has a time complexity of O(n^2), making it less efficient than other sorting algorithms for large lists. However, it has the advantage of being simple to implement and requiring a small amount of additional memory. Selection sort is not a stable sort, meaning that the relative order of elements with equal keys may be changed by the sort.
+                </p>
+            </div>
+
+              
+            <iframe width="380" height="300" src="https://www.youtube.com/embed/g-PGLbMth_g"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+           
+                <div id="heapsort"></div>
+                <h1 class="mt-5 fs-2">Heap Sort</h1>
+                <div class="paper text-start d-flex flex-column">
+    
+                    <p>
+                        Heapsort is a comparison-based sorting algorithm that uses a binary heap data structure. It has two main steps:
+                    </p>
+                </div>
+                <div class="paper text-start">
+                    1. Building a heap: This step rearranges the array into a binary heap, which is a complete binary tree with the property that the value of each parent node is greater than or equal to the values of its children. This step takes O(n) time.
+                </div>
+                <div class="paper text-start">
+                    2. Sorting the heap: This step repeatedly removes the maximum element from the heap and puts it at the end of the sorted array. This step takes O(nlogn) time, since there are n elements in the heap and removing the maximum element from the heap takes log(n) time.
+                </div>
+                
+
+                <iframe width="380" height="300" src="https://www.youtube.com/embed/2DmK_H7IdTo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+                <div class="paper text-start">
+                    Overall, heapsort has a time complexity of O(nlogn). It is not an in-place sort, since it requires an additional array to store the sorted elements. However, it is relatively simple to implement and has good performance in practice.
+                </div>
+                <div id="datastructures"></div>
+                <h1  class="mt-5">Data Structures</h1>
+
+                <div class="paper blu">
+                    <p>
+                        Data structures are used to store and organize data in a computer so that it can be accessed and modified efficiently. There are many different types of data structures, including arrays, linked lists, stacks, queues, trees, and graphs. Each type of data structure is designed to store data in a specific way, and has its own advantages and disadvantages. Some data structures are better suited for certain tasks, while others may be more efficient for different types of data or operations. Understanding the characteristics and trade-offs of different data structures is an important part of designing and implementing efficient algorithms and software systems. I would highly suggest you look at my recommended books in the <span><a href="Favorite-books.html">Favorite books section</a>
+                        </span>
+                    </p>
+                </div>
+                <div id="linkedlist"></div>
+                <h1 class="mt-5 fs-2">
+                    Linked lists
+                </h1>
+                <div class="paper">
+                    <p>
+                        A linked list is a linear data structure in which each element is a separate object, consisting of a node and a reference (link) to the next node in the sequence. The main advantage of linked lists over arrays is that elements can be inserted or removed from the list without reallocation or reorganization of the entire structure. However, linked lists require more memory overhead to store the references, so they are less efficient for cases where the size of the list is fixed or the majority of operations are element access rather than insertion or deletion. The size flexibility in linked lists can make them use less memory overall. This is useful when there is uncertainty about size or there are large variations in the size of data elements.
+                    </p>
+                </div>
+                <p class="fs-3">To get a visual, heres an image of a linked list</p>
+                <img class="img-fluid" src="img/Linked-list-nodes.png" alt="">
+                <div class="paper mb-5">
+                    <p>
+                        Here you can see that a linked list consists of a series of node objects. Each node object has an address and a data attribute. In C++, the address is known to be stored in a pointer object. Each pointer object points to each node with a memory address location number, usually this is in hexadecimal. Check out my linked list on <span><a href="https://replit.com/@HerbertRHolder/linklist#main.cpp">Replit!</a></span> and on <span><a href="https://github.com/HerbertRHolder/linkedlist/blob/master/main.cpp">Github</a></span>
+                    </p>
+                </div>
+    </section>
+   
+    
+
+   </main>
+   <footer>
+    footer
+   </footer>
+
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/tmp.js"></script>
+</body>
+</html>

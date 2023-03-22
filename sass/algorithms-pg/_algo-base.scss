@@ -1,0 +1,22 @@
+.algo-main {
+    position: relative !important;
+    width: 100%;
+    padding-top: 6rem;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    }
+
+  .algo-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        font-weight: bold;
+      }
+  }
+   

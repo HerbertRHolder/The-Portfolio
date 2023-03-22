@@ -1,12 +1,14 @@
 @use 'config';
 @use 'base';
 @use 'components/header';
+@use 'components/page-layout';
 @use 'components/buttons';
 @use 'components/project_section';
 @use 'components/anime';
 @use 'components/media-links';
 @use 'components/card';
 @use 'components/section';
+@use 'algorithms-pg/algo-base';
 @use 'components/footer';
 @use 'breakpoints';
 
