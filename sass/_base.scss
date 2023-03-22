@@ -33,11 +33,15 @@ header {
   z-index: 7;
   
   nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: fit-content;
     height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-self: flex-start;
 
     ul{
       display: flex;

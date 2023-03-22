@@ -2,7 +2,7 @@
 :root {
   --header-height: 72px;
   --header-padding: 3rem;
-  --header-nav-width: 200px;
+  --header-nav-width: fit-content;
   --header-nav-height: fit-content;
   --main-content-gap: 2rem;
   --page-w: 70%;
@@ -64,11 +64,15 @@ header {
   z-index: 7;
 }
 header nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-self: flex-start;
 }
 header nav ul {
   display: flex;
