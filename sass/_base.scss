@@ -87,9 +87,7 @@ main{
     section{
       position: relative;
       width: 100%;
-      height: c.$section-h;
       display: flex;
-      
       .cont{
         width: c.$cont-w;
         height: c.$cont-h;
@@ -98,14 +96,6 @@ main{
         justify-content: center;
         align-items: center;
       }
-      // .cont-whole{
-      //   width: c.$cont-whole;
-      //   height: c.$cont-h;
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: center;
-      //   align-items: center;
-      // }
     }
 }
 footer{
