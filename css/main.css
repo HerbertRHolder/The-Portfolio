@@ -415,7 +415,7 @@ svg {
 .sqr {
   z-index: -1;
   position: absolute;
-  left: 80%;
+  left: 74%;
   top: 35%;
   width: 20%;
   offset-distance: 100%;
@@ -423,6 +423,7 @@ svg {
 }
 
 .light-cont_anime {
+  width: 100%;
   position: fixed;
   top: 90px;
   z-index: 7;
