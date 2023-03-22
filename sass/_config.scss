@@ -32,11 +32,15 @@ $link-text-c:#000000;
     --section-h_mob: 900px; 
 }
 .prime{
-    background-color: #ffffff;
+    background-color: #dee1e6;
 }
 .accent{
-    background-color: #000000;
+    background-color: #ffffff;
 }
 .sub{
-    background-color: #dedede;
+    background: hsla(213, 80%, 57%, 1);
+    background: -webkit-linear-gradient(180deg, hsla(213, 80%, 57%, 1) 0%, hsla(212, 74%, 73%, 1) 100%);
+}
+.navy{
+   background-color: #ffffff;
 }

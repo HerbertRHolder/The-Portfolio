@@ -13,15 +13,20 @@
 }
 
 .prime {
-  background-color: #ffffff;
+  background-color: #dee1e6;
 }
 
 .accent {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .sub {
-  background-color: #dedede;
+  background: hsl(213deg, 80%, 57%);
+  background: -webkit-linear-gradient(180deg, hsl(213deg, 80%, 57%) 0%, hsl(212deg, 74%, 73%) 100%);
+}
+
+.navy {
+  background-color: #ffffff;
 }
 
 :root {
@@ -36,7 +41,6 @@
 }
 
 body {
-  background-color: var(--prime);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -54,6 +58,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 7;
 }
 header nav {
   width: fit-content;
@@ -335,6 +343,11 @@ label {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  background: hsl(213deg, 80%, 57%);
+  background-image: url("../img/HerbPhoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .crd-glass {
@@ -368,6 +381,7 @@ section {
 }
 
 .profile_section {
+  margin-top: 60px;
   height: fit-content;
   display: flex;
   flex-direction: column;
