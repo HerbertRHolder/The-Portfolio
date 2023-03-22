@@ -1,0 +1,123 @@
+@use 'config' as c;
+
+
+
+:root {
+    font-family: 'Roboto', system-ui, sans-serif;
+    font-size: 16px;
+  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--prime);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: c.$page-gap;
+
+}
+header {
+  position: relative;
+  width: c.$page-w;
+  height: var(--header-height);
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  nav{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul{
+      display: flex;
+      width: var(--header-nav-width);
+      height: var(--header-nav-height);
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0 !important;
+      gap: 1rem;
+      li,a,a:visited,a:hover{
+        text-decoration: none;
+        list-style: none;
+        color: c.$link-text-c;
+      }
+      
+
+    }
+  }
+  .logo{
+    margin: 0 ;
+    margin-left: var(--header-padding);
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+  }
+  menu{
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    display: grid;
+    place-items: center;
+    margin-right: var(--header-padding);
+
+  }
+  
+}
+main{
+  position: relative;
+    width: c.$page-w;
+    min-height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+    gap: var(--main-content-gap);
+    // padding: c.$main-padding;
+    section{
+      position: relative;
+      width: 100%;
+      height: c.$section-h;
+      display: flex;
+      
+      .cont{
+        width: c.$cont-w;
+        height: c.$cont-h;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      // .cont-whole{
+      //   width: c.$cont-whole;
+      //   height: c.$cont-h;
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+      //   align-items: center;
+      // }
+    }
+}
+footer{
+  width: c.$page-w;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: beige;
+
+}
+label {
+    display: flex;
+    align-items: center;
+  }

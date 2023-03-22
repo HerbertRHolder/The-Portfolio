@@ -1,0 +1,42 @@
+// Default styling 
+// ++++++++++++++++++++++++++++++=
+
+$page-gap: 1rem;    
+$main-padding: 0rem;
+$card-size:400px;
+$card-padding:1rem;
+$page-w: 100%;
+$section-h: 700px;
+$cont-w: 50%;
+$cont-h: 100%;
+$link-text-c:#000000;
+// $cont-whole: 100%;
+// ++++++++++++++++++++++++++++++=
+
+
+
+
+:root{
+    --header-height: 72px;
+    --header-padding: 3rem;
+    --header-nav-width: 200px;
+    --header-nav-height: fit-content;
+    // main content gap
+    --main-content-gap: 2rem;
+    --page-w: 70%;
+    --layer1: 100;
+    --font_mob:10px;
+    --card-padding_mob:3px;
+
+    // mobile style config
+    --section-h_mob: 900px; 
+}
+.prime{
+    background-color: #ffffff;
+}
+.accent{
+    background-color: #000000;
+}
+.sub{
+    background-color: #dedede;
+}
