@@ -140,6 +140,21 @@ label {
   align-items: center;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.contact_btn {
+  margin-right: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.light_btn {
+  margin-right: 2rem;
+}
+
 .profile_section {
   margin-top: 112px;
   height: fit-content;
@@ -472,19 +487,19 @@ svg {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.crd-paper1 {
+.shadow1 {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.crd-paper2 {
+.shadow2 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.crd-paper3 {
+.shadow3 {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.crd-paper4 {
+.shadow4 {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
@@ -540,7 +555,7 @@ section {
   color: #2e70c2;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 790px) {
   header .logo {
     margin-left: 1rem;
   }
@@ -548,6 +563,9 @@ section {
     margin-right: 1rem;
   }
   header nav {
+    display: none;
+  }
+  header .contact_btn {
     display: none;
   }
   .crd-comment {
