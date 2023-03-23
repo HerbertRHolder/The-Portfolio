@@ -67,7 +67,7 @@
 
     if (profileImg !== null) {
       profileImg.style.backgroundColor = "#EEB76B";
-      clay1.setAttribute("src", "img/icosa.png");
+      clay1.setAttribute("src", "img/Icosa.png");
       clay2.setAttribute("src", "img/dodeca.png");
     }
     if (papers !== null) {
