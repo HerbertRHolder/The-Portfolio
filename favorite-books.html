@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/imagineer-bg-removed-removebg-preview.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Herbert Holder</title>
+</head>
+
+<body id="body" class="prime">
+    <div class="modal fade text-black" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header d-flex gap-3">
+                <img width="100px" src="img/formspree.png" alt="Image of formspree logo">
+                
+                <span class="me-1 d-flex align-items-center gap-1">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </span>
+                
+              <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="https://formspree.io/f/xoqzqpzw" method="POST">
+                    <div class="mb-3">
+                  <label for="Email" class="col-form-label">Please Provide your Email</label>
+                  <input type="email" name="Email" class="form-control" id="recipient-name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="col-form-label">Message:</label>
+                  <textarea class="form-control" name="message" id="message-text" required></textarea>
+                </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </div>
+        </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header" id="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Software Imagineer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvas-body">
+            <nav class="w-100 h-50 d-flex flex-column gap-4">
+                <ul class="align-self-center d-flex flex-column gap-3">
+                    <a href="Program_concepts.html" class="offcanvas_a text-center">
+                        <li class="fs-1">Programming Concepts</li>
+                    </a>
+                    <a href="algorithms.html" class="offcanvas_a text-center">
+                        <li class="fs-1">Algorithms</li>
+                    </a>
+                    <a href="favorite-books.html" class="offcanvas_a text-center">
+                        <li class="fs-1">Favorite Books</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+      <header id="header" class="accent">
+        <figure class="logo">
+            <a href="index.html">
+                <img width="50px" src="img/imagineer-bg-removed-removebg-preview.png" alt="">
+            </a>
+        </figure>
+        <nav class="">
+            <ul class="align-self-center">
+                <a href="Program_concepts.html" class="text-center">
+                    <li class="fs-5">Programming Concepts</li>
+                </a>
+                <a href="algorithms.html" class="text-center">
+                    <li class="fs-5">Algorithms</li>
+                </a>
+                <a href="favorite-books.html" class="text-center">
+                    <li class="fs-5">Favorite Books</li>
+                </a>
+            </ul>
+        </nav>
+        <button id="contact" type="button" class="contact_btn sub shadow4 btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+            Contact</button>
+        <menu id="menu">
+            <ion-icon name="menu-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"></ion-icon>
+        </menu>
+    </header>
+
+    <div class="light-cont_anime fit-content d-flex justify-content-end">
+        <button type="button" class="light_btn">
+            <ion-icon id="light-mode_icon" class="fs-1" name="sunny-outline"></ion-icon>
+        </button>
+    </div>
+    <main class="algo-main" id="algo-main">
+        <div class="algo-title fs-2">
+            <h1>My Favorite Books</h1>
+        </div>
+        <section class="content1 gap-3" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">
+            <div id="intro"></div>
+            <h1 class="mt-5 fs-2">Introduction</h1>
+            <div class="paper blu">
+                <p class="text-center">
+                  This is just a list of some of my favorite books I have read and currently read. I always try to improve myself every day by working on projects an reading books. These are books that I read and reference to when I get stuck in a problem or want to improve my coding skills.
+                </p>
+            </div>
+            <img class="w-25 img-fluid" src="img/datastructures.png" alt="">
+            <div class="paper text-start">
+                <p>
+                    This text focuses on Data Structures and includes advanced topics in C++ such as Linked Lists and the Standard Template Library (STL). The text features abundant visual diagrams, examples, and extended Programming Examples, all of which serve to illuminate difficult concepts. Complete programming code and clear display of syntax, explanation, and example are used throughout the text, and each chapter concludes with a robust exercise set. Buy <span><a href="https://www.amazon.com/Data-Structures-Using-D-Malik/dp/0324782012">Data Structures Using C++</a></span>
+                </p>
+            </div>
+            <img class="w-25 img-fluid" src="img/descrete-math.png" alt="">
+            <div class="paper text-start">
+                <p>
+                    Discrete Mathematics and Its Applications is intended for one or two term introductory Discrete Mathematics courses taken by students from a wide variety of majors, including Computer Science, Mathematics, and Engineering. This renowned best-selling text, which has been used at over 500 institutions around the world, gives a focused introduction to the primary themes in a Discrete Mathematics course and demonstrates the relevance and practicality of Discrete Mathematics to a wide variety of real-world applications―from Computer Science to Data Networking, to Psychology, to Chemistry, to Engineering, to Linguistics, to Biology, to Business, and many other important fields. Buy <span><a href="https://www.amazon.com/Discrete-Mathematics-Applications-Kenneth-Rosen/dp/0072930330">Discrete Mathematics and Its Applications</a></span>
+                </p>
+            </div>
+            <img class="w-25 img-fluid" src="img/cplusplus.png" alt="">
+            <div class="paper text-start">
+                <p>
+                    In this brief version of Starting Out with C++, Gaddis takes a problem-solving approach, inspiring students to understand the logic behind developing quality programs while introducing the C++ programming language. This style of teaching builds programming confidence and enhances each student's development of programming skills. This edition in the Starting Out Series covers the core programming concepts that are introduced in the first semester introductory programming course. As with all Gaddis texts, clear and easy-to-read code listings, concise and practical real-world examples, and an abundance of exercises appear in every chapter. Buy <span><a href="https://www.chegg.com/textbooks/starting-out-with-c-6th-edition-9780136022534-0136022537?c_id=sem&utm_source=google&utm_medium=cpc&utm_campaign=tb--long_tail-campaign_googleshoppingpmax&utm_content=&gclid=CjwKCAiAwomeBhBWEiwAM43YIALqxgJzUt7HFZaGs1nigqHLdxPAnMv6PC_h86r2PEznDOsdjmT8eRoCZ98QAvD_BwE&gclsrc=aw.ds">Starting out with C++ 6th Edition</a></span>
+                </p>
+            </div>
+            <img class="w-25 img-fluid" src="img/clean-code.png" alt="">
+            <div class="paper text-start">
+                <p>
+                    Clean Code is divided into three parts. The first describes the principles, patterns, and practices of writing clean code. The second part consists of several case studies of increasing complexity. Each case study is an exercise in cleaning up code―of transforming a code base that has some problems into one that is sound and efficient. The third part is the payoff: a single chapter containing a list of heuristics and “smells” gathered while creating the case studies. The result is a knowledge base that describes the way we think when we write, read, and clean code.  Buy <span><a href="https://www.chegg.com/textbooks/clean-code-1st-edition-9780132350884-0132350882?c_id=sem&utm_source=google&utm_medium=cpc&utm_campaign=tb--long_tail-campaign_googleshoppingpmax&utm_content=&gclid=CjwKCAiAwomeBhBWEiwAM43YIGtXiwRkRQ3uJZuXFoZXifE984QK7ln69tTe0FUX7pC5H3hhYvj-zhoCrb8QAvD_BwE&gclsrc=aw.ds" target="_blank">Clean Code</a></span>
+                </p>
+            </div>
+        </section>
+        <section class="content2 text-center pt-5 d-flex gap-3 justify-content-start flex-column align-items-center">
+        </section>
+
+    </main>
+
+
+    <footer id="footer" class="d-flex justify-content-center mt-5">
+        <div class="w-100 h-50 d-flex flex-column justify-content-center gap-5">
+            <div class="w-100 h-auto d-flex justify-content-center">
+                <img width="100px" src="img/imagineer-bg-removed.png" alt="">
+            </div>
+            <div class="media-links ">
+                <div class="media_icon_cont ">
+                    <a href="https://github.com/HerbertRHolder" class="media-icons" data-bs-toggle="tooltip"
+                        data-bs-title="Github">
+                        <ion-icon class="fs-3" name="logo-github"></ion-icon>
+
+                    </a>
+                </div>
+                <div class="media_icon_cont">
+                    <a href="https://linkedin.com/in/herbertrholder" class="media-icons" data-bs-toggle="tooltip"
+                        data-bs-title="Linkedin">
+                        <ion-icon class="fs-3" name="logo-linkedin"></ion-icon>
+
+                    </a>
+                </div>
+                <div class="media_icon_cont">
+                    <a href="img/Herbert_Holder_Resume.pdf" class="media-icons" data-bs-toggle="tooltip" data-bs-title="Resume">
+                        <ion-icon class="fs-3" name="cloud-download-outline"></ion-icon>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/tmp.js"></script>
+</body>
+</html>

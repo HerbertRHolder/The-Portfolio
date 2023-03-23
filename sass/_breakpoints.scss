@@ -14,6 +14,7 @@
         .contact_btn{
             display: none;
         }
+
     }
 
     .crd-comment{
@@ -24,7 +25,6 @@
     }
 
     main{
-
         section{
             .cont{
                 width: 100%;
@@ -35,7 +35,7 @@
 
 
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 790px) {
   
     menu{
         display: none !important;

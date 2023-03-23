@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/imagineer-bg-removed-removebg-preview.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="img/imagineer-bg-removed-removebg-preview.png">
@@ -15,43 +16,98 @@
 </head>
 
 <body id="body" class="algo prime">
-    <header id="header" class="accent">
+    <div class="modal fade text-black" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header d-flex gap-3">
+                <img width="100px" src="img/formspree.png" alt="Image of formspree logo">
+                
+                <span class="me-1 d-flex align-items-center gap-1">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </span>
+                
+              <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="https://formspree.io/f/xoqzqpzw" method="POST">
+                    <div class="mb-3">
+                  <label for="Email" class="col-form-label">Please Provide your Email</label>
+                  <input type="email" name="Email" class="form-control" id="recipient-name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="col-form-label">Message:</label>
+                  <textarea class="form-control" name="message" id="message-text" required></textarea>
+                </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </div>
+        </form>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header" id="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Software Imagineer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvas-body">
+            <nav class="w-100 h-50 d-flex flex-column gap-4">
+                <ul class="align-self-center d-flex flex-column gap-3">
+                    <a href="Program_concepts.html" class="offcanvas_a text-center">
+                        <li class="fs-1">Programming Concepts</li>
+                    </a>
+                    <a href="algorithms.html" class="offcanvas_a text-center">
+                        <li class="fs-1">Algorithms</li>
+                    </a>
+                    <a href="favorite-books.html" class="offcanvas_a text-center">
+                        <li class="fs-1">Favorite Books</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+      <header id="header" class="accent">
         <figure class="logo">
             <a href="index.html">
                 <img width="50px" src="img/imagineer-bg-removed-removebg-preview.png" alt="">
             </a>
         </figure>
         <nav class="">
-                <ul class="align-self-center">
-                    <a href="Program_concepts.html">
-                        <li  class="fs-5">Programming Concepts</li>
-                    </a>
-                    <a href="algorithms.html">
-                        <li class="fs-5">Algorithms</li>
-                    </a>
-                    <a href="#">
-                        <li class="fs-5">Favorite Books</li>
-                    </a>
-                </ul>
-            </nav>
-            <button type="button" class="contact_btn sub shadow4">Contact</button>
-            <menu id="menu">
-                <ion-icon name="menu-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"></ion-icon>
-            </menu>
+            <ul class="align-self-center">
+                <a href="Program_concepts.html" class="text-center">
+                    <li class="fs-5">Programming Concepts</li>
+                </a>
+                <a href="algorithms.html" class="text-center">
+                    <li class="fs-5">Algorithms</li>
+                </a>
+                <a href="favorite-books.html" class="text-center">
+                    <li class="fs-5">Favorite Books</li>
+                </a>
+            </ul>
+        </nav>
+        <button id="contact" type="button" class="contact_btn sub shadow4 btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+            Contact</button>
+        <menu id="menu">
+            <ion-icon name="menu-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"></ion-icon>
+        </menu>
     </header>
 
 
 
 
-
+    <div class="light-cont_anime fit-content d-flex justify-content-end">
+        <button type="button" class="light_btn">
+            <ion-icon id="light-mode_icon" class="fs-1" name="sunny-outline"></ion-icon>
+        </button>
+    </div>
     <main class="hidden algo-main">
 
-
-        <menu class="table-of-content-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-            aria-controls="offcanvasScrolling">
-            <ion-icon name="caret-forward-sharp"></ion-icon>
-        </menu>
         <div class="algo-title fs-1">
             <h1>Progamming Concepts</h1>
         </div>
@@ -184,8 +240,34 @@
 
     </main>
 
-    <footer id="footer">
-        footer
+    <footer id="footer" class="d-flex justify-content-center mt-5">
+        <div class="w-100 h-50 d-flex flex-column justify-content-center gap-5">
+            <div class="w-100 h-auto d-flex justify-content-center">
+                <img width="100px" src="img/imagineer-bg-removed.png" alt="">
+            </div>
+            <div class="media-links ">
+                <div class="media_icon_cont ">
+                    <a href="https://github.com/HerbertRHolder" class="media-icons" data-bs-toggle="tooltip"
+                        data-bs-title="Github">
+                        <ion-icon class="fs-3" name="logo-github"></ion-icon>
+
+                    </a>
+                </div>
+                <div class="media_icon_cont">
+                    <a href="https://linkedin.com/in/herbertrholder" class="media-icons" data-bs-toggle="tooltip"
+                        data-bs-title="Linkedin">
+                        <ion-icon class="fs-3" name="logo-linkedin"></ion-icon>
+
+                    </a>
+                </div>
+                <div class="media_icon_cont">
+                    <a href="img/Herbert_Holder_Resume.pdf" class="media-icons" data-bs-toggle="tooltip" data-bs-title="Resume">
+                        <ion-icon class="fs-3" name="cloud-download-outline"></ion-icon>
+
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

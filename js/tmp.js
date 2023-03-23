@@ -1,11 +1,18 @@
 (function () {
   "use strict";
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+  const tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  );
+
   let lightMode = JSON.parse(localStorage.getItem("light"));
-  window.addEventListener("load",()=>{
-   if (lightMode === false){
-    changeDark();
-   }
-  })
+  window.addEventListener("load", () => {
+    if (lightMode === false) {
+      changeDark();
+    }
+  });
   let lightBtn = document.getElementById("light-mode_icon");
   let profileImg = document.getElementById("circle_profile");
   let coverLetter = document.getElementById("cl");
@@ -18,6 +25,10 @@
   let algoMain = document.getElementById("algo-main");
   let blueCards = document.querySelectorAll(".blu");
   let lis = document.querySelectorAll("li");
+  let atagsOffcanvas = document.querySelectorAll(".offcanvas_a")
+  let media = document.querySelectorAll(".media-icons");
+  let offcanvas = document.getElementById("offcanvas-body");
+  let offcanvasHeader = document.getElementById("offcanvas-header")
 
   let header = document.getElementById("header");
   let body = document.getElementById("body");
@@ -33,21 +44,20 @@
     menu: "#000000",
   };
 
-
-
-  
-  
-
-  
- 
-
   function changeDark() {
     lightBtn.setAttribute("name", "moon-outline");
     lightBtn.style.color = "#ffffff";
-
+    media.forEach(link => {
+        link.style.color = "#ffffff"
+    })
+    atagsOffcanvas.forEach(a => {
+        a.style.color = "#ffffff"
+    })
+    offcanvasHeader.classList.add("header_dark");
     header.classList.add("header_dark");
     body.classList.add("body_dark");
     footer.classList.add("footer_dark");
+    offcanvas.classList.add("offcanvas_dark");
     contactBtn.classList.add("contact_btn_dark");
     menu.style.color = "#ffffff";
 
@@ -86,7 +96,9 @@
   function changeLight() {
     lightBtn.setAttribute("name", "sunny-outline");
     lightBtn.style.color = "#000000";
-
+    media.forEach(link => {
+        link.style.color = "#000000"
+    })
     header.classList.remove("header_dark");
     body.classList.remove("body_dark");
     footer.classList.remove("footer_dark");
