@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="prime">
+<body id="body" class="prime">
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasRightLabel">Software Imagineer</h5>
@@ -21,26 +21,27 @@
         <div class="offcanvas-body">
         </div>
     </div>
-    <header class="accent">
+    <header id="header" class="accent">
         <figure class="logo">
             <a href="index.html">
                 <img width="50px" src="img/imagineer-bg-removed-removebg-preview.png" alt="">
             </a>
-        </figure>        <nav class="">
+        </figure>        
+        <nav class="">
             <ul class="align-self-center">
                 <a href="Program_concepts.html">
-                    <li>Programming Concepts</li>
+                    <li  class="fs-5">Programming Concepts</li>
                 </a>
                 <a href="algorithms.html">
-                    <li>Algorithms</li>
+                    <li class="fs-5">Algorithms</li>
                 </a>
                 <a href="#">
-                    <li>Favorite Books</li>
+                    <li class="fs-5">Favorite Books</li>
                 </a>
             </ul>
         </nav>
-        <button type="button" class="contact_btn sub shadow4">Contact</button>
-        <menu>
+        <button id="contact" type="button" class="contact_btn sub shadow4">Contact</button>
+        <menu id="menu">
             <ion-icon name="menu-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                 aria-controls="offcanvasRight"></ion-icon>
         </menu>
@@ -59,7 +60,7 @@
        
         <section class="profile_section">
             <div class="card-profile " id="circle_profile"></div>
-            <div class="cover-letter">
+            <div id="cl" class="cover-letter">
                 <p>
                     Results oriented Software Engineer and US Marine Veteran with experience specializing in designing
                     custom software solutions and driving new feature development. A proven track record of colaborating
@@ -85,44 +86,46 @@
                 </div>
             </div>
         </section>
-        <section class="project-area dol">
-            <div class=" dol title-projects w-100 d-flex justify-content-center">
-                <h1>My Projects</h1>
+        <section class="project-area">
+            <div class="title-projects w-100 d-flex justify-content-center">
+                <h1 class="fs-2">My Projects</h1>
             </div>
-
-            <div class="project-wrapper dol">
-                <a class="dol" href="https://herbertrholder.github.io/musician-appv2/music.html">
+           
+            <div class="project-wrapper">
+                <a class="" href="https://herbertrholder.github.io/musician-appv2/music.html">
                     <div class="project prj1"></div>
                 </a>
-                <h2><strong>JS DOM Music Player</strong></h2>
+                <h2><strong>JS DOM ChillHop Music Player</strong></h2>
             </div>
-            <div class="project-wrapper  dol">
-                <a class="dol" href=" https://herbertrholder.github.io/Movie-project/">
+            <div class="project-wrapper">
+                <a class="" href="https://aviatoflyingspades.com:8080/">
+                    <div class="project prj4"></div>
+                </a>
+
+                <h2><strong>(Capstone) Book Flights Stripe API App</strong></h2>
+            </div>
+            <div class="project-wrapper">
+                <a class="" href=" https://herbertrholder.github.io/Movie-project/">
                     <div class="project prj2"></div>
                 </a>
                 <h2><strong>JSON Server CRUD Application</strong></h2>
 
             </div>
-            <div class="project-wrapper dol">
-                <a class="dol" href="https://www.youtube.com/watch?v=lkfMiONYtUQ">
+            <div class="project-wrapper">
+                <a class="" href="https://www.youtube.com/watch?v=lkfMiONYtUQ">
                     <div class="project prj3"></div>
                 </a>
 
                 <h2><strong>REST API Fetch Weather App</strong></h2>
             </div>
-            <div class="project-wrapper dol">
-                <a class="dol" href="https://herbertrholder.github.io/ecommerce/">
-                    <div class="project prj4"></div>
-                </a>
-                <h2><strong>Sports Ecommerce (Front-end)</strong></h2>
-            </div>
+            
 
         </section>
     </main>
 
 
 
-    <footer class="navy">
+    <footer id="footer">
         footer
     </footer>
 

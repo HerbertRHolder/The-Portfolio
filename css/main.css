@@ -21,8 +21,8 @@
 }
 
 .sub {
-  background: hsl(213deg, 80%, 57%);
-  background: -webkit-linear-gradient(180deg, hsl(213deg, 80%, 57%) 0%, hsl(212deg, 74%, 73%) 100%);
+  background: hsl(213deg, 80%, 57%) !important;
+  background: -webkit-linear-gradient(180deg, hsl(213deg, 80%, 57%) 0%, hsl(212deg, 74%, 73%) 100%) !important;
 }
 
 .navy {
@@ -48,13 +48,18 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  transition: all 1s ease;
+}
+
+.body_dark {
+  background-color: #351F39;
 }
 
 header {
   position: relative;
   width: 100%;
   height: var(--header-height);
-  background-color: aquamarine;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,6 +67,7 @@ header {
   top: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   z-index: 7;
+  transition: all 1s ease;
 }
 header nav {
   position: absolute;
@@ -101,6 +107,10 @@ header menu {
   margin-right: var(--header-padding);
 }
 
+.header_dark {
+  background-color: #2ab7ca;
+}
+
 main {
   position: relative;
   width: 100%;
@@ -132,7 +142,13 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: beige;
+  background-color: #ffffff;
+  transition: all 1s ease;
+}
+
+.footer_dark {
+  background-color: #50577A;
+  border-top: 1px solid #A3C7D6;
 }
 
 label {
@@ -198,6 +214,15 @@ button {
   margin-right: 2rem;
   padding: 1rem;
   border-radius: 10px;
+  color: #ffffff;
+  border: "1px solid #ffffff";
+  transition: all 1s ease;
+}
+
+.contact_btn_dark {
+  background-color: #2c65ad;
+  color: #ffffff;
+  border: 1px solid #A3C7D6;
 }
 
 .light_btn {
@@ -227,11 +252,18 @@ button {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background: hsl(213deg, 80%, 57%);
   background: -webkit-linear-gradient(180deg, hsl(213deg, 80%, 57%) 0%, hsl(212deg, 74%, 73%) 100%);
+  transition: all 1s ease;
 }
 .profile_section .cover-letter p {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: left;
+}
+
+.cover-letter_dark {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  background: #2c65ad !important;
+  border: 1px solid #A3C7D6 !important;
 }
 
 .title-projects {
@@ -296,7 +328,7 @@ button {
 }
 
 .prj2 {
-  background-image: url("img/movie-app.png");
+  background-image: url("../img/movie-app.png");
   background-position: center;
   background-size: 190%;
   background-repeat: no-repeat;
@@ -310,7 +342,7 @@ button {
 }
 
 .prj3 {
-  background-image: url("img/weatherapp.png");
+  background-image: url("../img/weatherapp.png");
   background-position: center;
   background-size: 190%;
   background-repeat: no-repeat;
@@ -324,7 +356,7 @@ button {
 }
 
 .prj4 {
-  background-image: url("img/ecommerce.png");
+  background-image: url("../img/aviato.png");
   background-position: center;
   background-size: 190%;
   background-repeat: no-repeat;
@@ -338,7 +370,7 @@ button {
 }
 
 .prj1 {
-  background-image: url("img/musicapp.png");
+  background-image: url("../img/musicapp.png");
   background-position: center;
   background-size: 190%;
   background-repeat: no-repeat;

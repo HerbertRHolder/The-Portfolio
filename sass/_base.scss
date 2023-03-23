@@ -17,13 +17,16 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: c.$page-gap;
-
+    transition: all 1s ease;
+}
+.body_dark{
+  background-color: #351F39;
 }
 header {
   position: relative;
   width: c.$page-w;
   height: var(--header-height);
-  background-color: aquamarine;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +34,7 @@ header {
   top: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
   z-index: 7;
-  
+  transition: all 1s ease;
   nav{
     position: absolute;
     left: 50%;
@@ -75,6 +78,9 @@ header {
   }
   
 }
+.header_dark{
+  background-color: #2ab7ca;
+}
 main{
   position: relative;
     width: c.$page-w;
@@ -106,8 +112,12 @@ footer{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: beige;
-
+  background-color: #ffffff;
+  transition: all 1s ease;
+}
+.footer_dark{
+  background-color: #50577A;
+  border-top: 1px solid #A3C7D6;
 }
 label {
     display: flex;

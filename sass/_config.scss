@@ -38,8 +38,8 @@ $link-text-c:#000000;
     background-color: #ffffff;
 }
 .sub{
-    background: hsla(213, 80%, 57%, 1);
-    background: -webkit-linear-gradient(180deg, hsla(213, 80%, 57%, 1) 0%, hsla(212, 74%, 73%, 1) 100%);
+    background: hsla(213, 80%, 57%, 1) !important;
+    background: -webkit-linear-gradient(180deg, hsla(213, 80%, 57%, 1) 0%, hsla(212, 74%, 73%, 1) 100%) !important;
 }
 .navy{
    background-color: #ffffff;

@@ -7,40 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="icon" type="image/x-icon" href="img/imagineer-bg-removed-removebg-preview.png">
+    <link rel="icon" type="image/x-icon" href="img/imagineer-bg-removed-removebg-preview.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Progamming Concepts</title>
 </head>
 
-<body class="algo prime">
-    <header class="accent">
+<body id="body" class="algo prime">
+    <header id="header" class="accent">
         <figure class="logo">
             <a href="index.html">
                 <img width="50px" src="img/imagineer-bg-removed-removebg-preview.png" alt="">
             </a>
-        </figure>        <nav class="">
-            <ul class="align-self-center">
-                <a href="Program_concepts.html">
-                    <li>Programming Concepts</li>
-                </a>
-                <a href="algorithms.html">
-                    <li>Algorithms</li>
-                </a>
-                <a href="#">
-                    <li>Favorite Books</li>
-                </a>
-            </ul>
-        </nav>
-        <button type="button" class="contact_btn sub shadow4">Contact</button>
-        <menu>
-            <ion-icon name="menu-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"></ion-icon>
-        </menu>
+        </figure>
+        <nav class="">
+                <ul class="align-self-center">
+                    <a href="Program_concepts.html">
+                        <li  class="fs-5">Programming Concepts</li>
+                    </a>
+                    <a href="algorithms.html">
+                        <li class="fs-5">Algorithms</li>
+                    </a>
+                    <a href="#">
+                        <li class="fs-5">Favorite Books</li>
+                    </a>
+                </ul>
+            </nav>
+            <button type="button" class="contact_btn sub shadow4">Contact</button>
+            <menu id="menu">
+                <ion-icon name="menu-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"></ion-icon>
+            </menu>
     </header>
 
-   
+
 
 
 
@@ -51,12 +52,12 @@
             aria-controls="offcanvasScrolling">
             <ion-icon name="caret-forward-sharp"></ion-icon>
         </menu>
-       <div class="algo-title fs-1">
-        <h1>Progamming Concepts</h1>
-       </div>
+        <div class="algo-title fs-1">
+            <h1>Progamming Concepts</h1>
+        </div>
         <section class="content1 gap-3" data-bs-target="#offcanvasScrolling" data-bs-dismiss="offcanvas">
             <div id="intro"></div>
-            <h1  class="fs-2">Introduction</h1>
+            <h1 class="fs-2">Introduction</h1>
             <div class="paper blu">
                 <p class="text-center">
                     A lot of software developers (some self taught some schooling) don't have a good enough
@@ -76,7 +77,7 @@
                 among others.
             </div>
             <div id="encapsulation"></div>
-            <h1  class="mt-5 fs-2">Encapsulation</h1>
+            <h1 class="mt-5 fs-2">Encapsulation</h1>
 
             <div class="paper">
                 Encapsulation is the technique of hiding the properties and method details of an object from outside the
@@ -148,12 +149,13 @@
             </div>
             <img class="w-75 img-fluid" src="img/employee-class.png" alt="">
             <div class="paper">
-                <p class="fs-4">In another Java file we can create another class called developer and extend the Employee class. In a
+                <p class="fs-4">In another Java file we can create another class called developer and extend the
+                    Employee class. In a
                     real world perspective we can represent this concept abstractly like this. </p>
             </div>
             <img class="w-75 img-fluid" src="img/developer-class.png" alt="">
             <div id="inherit"></div>
-            <h1  class="pt-5 fs-2">Inheritance</h1>
+            <h1 class="pt-5 fs-2">Inheritance</h1>
             <div class="paper">
                 <p>
                     Inheritance is a concept in object-oriented programming (OOP) where a class (called the child class
@@ -164,7 +166,8 @@
                 </p>
             </div>
             <div class="paper">
-                <p>A good example of inheritance would be the image above this. The Developer class inherits the Employee super class.
+                <p>A good example of inheritance would be the image above this. The Developer class inherits the
+                    Employee super class.
                 </p>
 
             </div>
@@ -172,7 +175,8 @@
             <h1 class="mt-5 fs-2">More to come!</h1>
             <div class="paper blu mt-4 mb-4">
                 <p>
-                    That's it for now. Make sure to be on the look out for more concepts being posted right here i.e time/space complexity, REST API's, databases etc... 
+                    That's it for now. Make sure to be on the look out for more concepts being posted right here i.e
+                    time/space complexity, REST API's, databases etc...
                 </p>
             </div>
 
@@ -180,9 +184,9 @@
 
     </main>
 
-  <footer>
-    footer
-  </footer>
+    <footer id="footer">
+        footer
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -191,6 +195,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/header.js"></script>
     <script src="js/anime.js"></script>
+    <script src="js/tmp.js"></script>
 
 
 </body>

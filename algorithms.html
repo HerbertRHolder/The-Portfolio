@@ -10,8 +10,8 @@
     <title>Herbert Holder</title>
 </head>
 
-<body class="prime">
-    <header class="accent">
+<body id="body" class="prime">
+    <header id="header" class="accent">
         <figure class="logo">
             <a href="index.html">
                 <img width="50px" src="img/imagineer-bg-removed-removebg-preview.png" alt="">
@@ -20,28 +20,29 @@
         <nav class="">
             <ul class="align-self-center">
                 <a href="Program_concepts.html">
-                    <li>Programming Concepts</li>
+                    <li  class="fs-5">Programming Concepts</li>
                 </a>
                 <a href="algorithms.html">
-                    <li>Algorithms</li>
+                    <li class="fs-5">Algorithms</li>
                 </a>
                 <a href="#">
-                    <li>Favorite Books</li>
+                    <li class="fs-5">Favorite Books</li>
                 </a>
             </ul>
         </nav>
-        <button type="button" class="contact_btn sub shadow4">Contact</button>
-        <menu>
+        <button id="contact" type="button" class="contact_btn sub shadow4">Contact</button>
+        <menu id="menu">
             <ion-icon name="menu-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                 aria-controls="offcanvasRight"></ion-icon>
         </menu>
     </header>
+
     <div class="light-cont_anime fit-content d-flex justify-content-end">
         <button type="button" class="light_btn">
             <ion-icon id="light-mode_icon" class="fs-1" name="sunny-outline"></ion-icon>
         </button>
     </div>
-   <main class="algo-main">
+   <main id="algo-main"class="algo-main">
     <div class="algo-title fs-2">
         <h1>Algorithms And Data Structures</h1>
     </div>
@@ -49,7 +50,7 @@
         <br>
         <div id="intro"></div>
         <h1 class=" fs-2">Introduction</h1>
-        <div class="paper blu" >
+        <div class="paper blu">
             <p class="text-center">
                 Data structures and algorithms are fundamental concepts in computer science. Data structures are
                 used to organize and store data efficiently, while algorithms are used to manipulate and process
@@ -111,7 +112,6 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             <div class="paper">
-
                 <p>Quicksort has a time complexity of O(n log n), making it a fast and efficient sorting algorithm for
                     large lists. However, it is not a stable sort, meaning that the relative order of elements with
                     equal keys may be changed by the sort. Read about <span>Stable Sorts at </span><span><a
@@ -166,7 +166,7 @@
                     Overall, heapsort has a time complexity of O(nlogn). It is not an in-place sort, since it requires an additional array to store the sorted elements. However, it is relatively simple to implement and has good performance in practice.
                 </div>
                 <div id="datastructures"></div>
-                <h1  class="mt-5">Data Structures</h1>
+                <h1  class="mt-5 fs-2">Data Structures</h1>
 
                 <div class="paper blu">
                     <p>
@@ -195,7 +195,7 @@
     
 
    </main>
-   <footer>
+   <footer id="footer">
     footer
    </footer>
 
