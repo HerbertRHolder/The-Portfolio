@@ -394,6 +394,20 @@ button {
   animation: fra 0.5s ease;
 }
 
+.prj5 {
+  background-image: url("../img/smoothie.png");
+  background-position: center;
+  background-size: 190%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+.prj5:hover {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: fra 0.5s ease;
+}
+
 .my-story-wrapper {
   margin-top: 2rem;
   width: 100%;
